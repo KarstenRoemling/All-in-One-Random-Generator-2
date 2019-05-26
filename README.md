@@ -1,6 +1,11 @@
-# program
+# All-in-One Random Generator 2
 
-A new Flutter project.
+- Flutter Project
+- The second generation of the [All-in-One Random Generator](https://play.google.com/store/apps/details?id=com.my.randomgenerator).
+- Modern Design
+- Lots of features
+
+*In development!!!*
 
 ## Getting Started
 
