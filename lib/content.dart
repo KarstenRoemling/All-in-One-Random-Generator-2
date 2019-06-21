@@ -8,7 +8,7 @@ class Content extends StatefulWidget{
 
 class ContentState extends State<Content>{
 
-    List data = [new SimpleRandom()];
+    List data = [SimpleRandom()];
 
     @override
     Widget build(BuildContext context){

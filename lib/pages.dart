@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import './MComponent.dart';
+import './data.dart';
 
 class Info extends MaterialPageRoute<Null>{
     Info() : super(builder: (BuildContext context){
         return Scaffold(
             appBar: AppBar(
-                title: Text("Informationen"),
-                backgroundColor: Colors.blue,
+                title: MText(text:Str.M_INFO[Settings.lang]),
+                backgroundColor: Settings.clr,
             ),
             body: Center(
-                child: Text("Hier sind die Infos!"),
+                child: MText(text:"Hier sind die Infos!"),
             )
         );
     });
@@ -18,11 +20,11 @@ class FairSafeApps extends MaterialPageRoute<Null>{
     FairSafeApps() : super(builder: (BuildContext context){
         return Scaffold(
             appBar: AppBar(
-                title: Text("FairSafeApps"),
-                backgroundColor: Colors.blue,
+                title: MText(text:"FairSafeApps"),
+                backgroundColor: Settings.clr,
             ),
             body: Center(
-                child: Text("Informationen über uns:"),
+                child: MText(text:"Informationen über uns:"),
             )
         );
     });
