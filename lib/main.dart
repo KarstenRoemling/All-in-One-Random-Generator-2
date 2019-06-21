@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 import './drawer.dart';
 import './content.dart';
+import './MComponent.dart';
+import './data.dart';
+import './appBuilder.dart';
 
 void main(){
-  runApp(
-    MaterialApp(
-      home: Home(),
-      title: 'All-in-One Zufallsgenerator'
-    )
-  );
+  runApp(TheApp());
+}
+
+class TheApp extends StatelessWidget{
+  Widget build(BuildContext context){
+    return AppBuilder(builder: (context) {
+      return MaterialApp(
+        home: Home(),
+        title: Str.APP_NAME[Settings.lang],
+        color: Settings.clr
+      );
+    });
+  }
 }
 
 class Home extends StatefulWidget{
@@ -21,12 +31,12 @@ class HomeState extends State<Home>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("All-in-One Zufallsgenerator"),
-        backgroundColor: Colors.blue,
+        title: MText(text: Str.APP_NAME[Settings.lang]),
+        backgroundColor: Settings.clr,
       ),
-      body: new Content(),
+      body: Content(),
       drawer: Drawer(
-        child: new DrawerItems(),
+        child: DrawerItems(),
       )
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './MComponent.dart';
 
 class Bar extends StatefulWidget{
     Bar({Key key, this.title}) : super(key: key);
@@ -56,8 +57,8 @@ class BarState extends State<Bar> with SingleTickerProviderStateMixin{
     Widget mayBeText(double g, double alpha){
         if(g <= 0.5){
             return Opacity(
-                child: Text(
-                    widget.title,
+                child: MText(
+                    text: widget.title,
                     style: TextStyle(
                         fontSize: 25.0,
                         fontWeight: FontWeight.bold,
