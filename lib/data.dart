@@ -19,5 +19,6 @@ class Settings{
   static const String VERSION = "1.0";
   static int lang = 0;
   static Color clr = Colors.yellow[800];
+  static Color accClr = Colors.yellow[700];
   static String font = "Dosis";
 }

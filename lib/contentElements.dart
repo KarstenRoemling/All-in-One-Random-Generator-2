@@ -56,7 +56,7 @@ class SimpleRandomState extends State<SimpleRandom>{
                               decoration: InputDecoration(hintText: Str.OF_MIN[Settings.lang], hintStyle: TextStyle(fontFamily: Settings.font)),
                               keyboardType: TextInputType.number,
                               controller: controllerX,
-                              style: TextStyle(fontFamily: Settings.font)
+                              style: TextStyle(fontFamily: Settings.font),
                             ),
                             padding: EdgeInsets.all(8.0)
                           )
