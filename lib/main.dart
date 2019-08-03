@@ -15,7 +15,11 @@ class TheApp extends StatelessWidget{
       return MaterialApp(
         home: Home(),
         title: Str.APP_NAME[Settings.lang],
-        color: Settings.clr
+        color: Settings.clr,
+        theme: ThemeData(
+          primaryColor: Settings.clr,
+          accentColor: Settings.accClr,
+        )
       );
     });
   }
@@ -32,7 +36,7 @@ class HomeState extends State<Home>{
     return Scaffold(
       appBar: AppBar(
         title: MText(text: Str.APP_NAME[Settings.lang]),
-        backgroundColor: Settings.clr,
+        //backgroundColor: Settings.clr,
       ),
       body: Content(),
       drawer: Drawer(
